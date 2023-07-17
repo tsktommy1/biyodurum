@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biyo D&uuml;r&uuml;m</title>
+	<style>
+		body {
+			margin: unset;
+			display: flex;
+			flex-flow: column;
+			font-family: Arial, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+            background: #eee;
+		}
+		img {
+			-webkit-user-drag: none;
+			user-drag: none;
+		}
+		.parallax {
+			width: 100%;
+			height: 100%;
+			background-image: url(./assets/image00001.jpeg);
+			background-size: cover;
+			position: fixed;
+		}
+
+		.hero {
+			position: relative;
+			width: 100%;
+			height: 50vh;
+			z-index: 1;
+		}
+
+		.cont {
+			position: relative;
+			width: 100%;
+			height: max-content;
+			z-index: 2;
+            background: #ddd;
+			background-image: url(./assets/wood.jpg);
+			background-size: cover;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			box-sizing: border-box;
+		}
+
+		.card {
+			overflow: hidden;
+			background: #ccc;
+			border-radius: 1rem;
+			height: 24rem;
+			width: 24rem;
+			position: relative;
+		}
+
+		.card > img {
+			object-fit: cover;
+			object-position: center;
+			height: 24rem;
+			width: 24rem;
+		}
+
+		.card > .info {
+			box-sizing: border-box;
+			padding: .5rem;
+			background: #fff8;
+			backdrop-filter: blur(8px);
+			width: 24rem;
+			height: 12rem;
+			top: 24rem;
+			position: absolute;
+			transition: top .2s;
+			overflow-y: auto;
+		}
+
+		.card > .info > h2, .card > .info > h3 {
+			margin: unset;
+		}
+
+		.card:hover > .info {
+			top: 12rem;
+		}
+
+		.card > .info::-webkit-scrollbar {
+			width: .5rem;
+		}
+
+		.card > .info::-webkit-scrollbar-track {
+			background: #fff content-box;
+			border-radius: .25rem;
+			border: .125rem solid transparent;
+		}
+
+		.card > .info::-webkit-scrollbar-thumb {
+			background: #000 content-box;
+			border-radius: .25rem;
+			border: .125rem solid transparent;
+		}
+
+		.logo {
+			padding: 1rem;
+			background: #fff;
+			top: 50%;
+			left: 50%;
+            height: 150px;
+            width: 150px;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.cont > h1 {
+			width: 100%;
+			color: white;
+			text-align: center;
+			margin: unset;
+		}
+
+		footer {
+            z-index: 1;
+			padding: 2rem 0;
+			display: flex;
+            font-size: 1.5rem;
+			flex-flow: column;
+			align-items: center;
+			gap: .25rem;
+			font-weight: 700;
+			color: #fff !important;
+			text-shadow:
+				-1px -1px 1px #000,
+				1px -1px 1px #000,
+				-1px 1px 1px #000,
+				1px 1px 1px #000
+			;
+		}
+
+		a, a:visited, a:hover, a:active {
+			color: #fff !important;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="parallax">
+	</div>
+
+	<div class="hero">
+		<div class="logo">
+			<img src="./assets/logo.png" alt="Biyo Durum Logo">
+		</div>
+	</div>
+
+	<div class="cont">
+
+		<h1>Nos Menus</h1>
+
+		<div class="card">
+			<img src="./assets/image00003.jpeg">
+			<div class="info">
+				<h2>Le D&uuml;r&uuml;m Agneau</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="card">
+			<img src="./assets/image00002.jpeg">
+			<div class="info">
+				<h2>Le G&ouml;zleme</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="card">
+			<img src="./assets/image00004.jpeg">
+			<div class="info">
+				<h2>Le D&uuml;r&uuml;m Poulet</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="card">
+			<img src="./assets/image00006.jpeg">
+			<div class="info">
+				<h2>Le D&uuml;r&uuml;m V&eacute;g&eacute;tarien</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="card">
+			<img src="./assets/image00005.jpeg">
+			<div class="info">
+				<h2>Le Lahmacum</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="card">
+			<img src="./assets/image00007.jpeg">
+			<div class="info">
+				<h2>Le D&uuml;r&uuml;m Viande Hach&eacute;e</h2>
+				<h3>Ingredients:</h3>
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<span>144 rue du Faubourg Saint-Antoine</span>
+		<a href="tel:+33782476538">+33782476538</a>
+	</footer>
+
+</body>
+</html>
