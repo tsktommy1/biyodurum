@@ -46,7 +46,6 @@
 			overflow: hidden;
 			position: relative;
 			width: 100%;
-			height: 40vh;
 			z-index: 1;
 			/* background: radial-gradient(at bottom, #fff, #e3dfd3); */
 		}
@@ -124,14 +123,11 @@
 		}
 
 		.logo {
-			height: 100%;
-			top: 15%;
 			width: 100%;
-			left: 50%;
-			transform: translateX(-50%);
 			box-sizing: border-box;
-			position: absolute;
 			overflow: hidden;
+			padding-top: .5rem;
+			text-align: center;
 		}
 
 		.cont>h1 {
@@ -168,22 +164,10 @@
 		.word {
 			font-family: "Passajero";
 			font-size: 6rem;
-			color: #d1c7bd;
-			position: absolute;
-			width: calc(100% - 2rem);
-			top: calc(50% - 4rem);
+			color: #ca965d;
+			width: calc(100%);
 			height: 6rem;
 			text-align: center;
-			transform-origin: center;
-			text-shadow: 4px 4px 0 #ca965d;
-		}
-
-		.word:nth-child(1) {
-			transform: translate(-150px, 0);
-		}
-
-		.word:nth-child(2) {
-			transform: translate(150px, 0);
 		}
 
 		@media only screen and (min-width: 1200px) {
@@ -193,64 +177,32 @@
 				height: 10rem;
 			}
 
-			.word:nth-child(1) {
-				transform: translate(-250px, 0);
-			}
-
-			.word:nth-child(2) {
-				transform: translate(250px, 0);
-			}
 		}
 
 		@media only screen and (max-width: 600px) {
-			.parallax {
-				height: calc(50% + 4rem) !important;
-			}
-
 			.card {
 				width: 16rem !important;
 				height: 16rem !important;
-			}
-
-			.logo {
-				width: 50rem;
 			}
 
 			.word {
 				font-size: 5rem;
 				height: 5rem;
 			}
-
-			.word:nth-child(1) {
-				transform: translate(-12%, 25%) rotate(-45deg);
-			}
-
-			.word:nth-child(2) {
-				transform: translate(10%, 0) rotate(45deg);
-			}
 		}
 
-		/* .word::before {
-			content: attr(data-text);
-			font-size: 5rem;
-
-			color: #94734b;
-		} */
 	</style>
 </head>
 
 <body>
 
-
+	<div class="hero">
+		<div class="logo">
+			<span class="word">BIYO D&Uuml;R&Uuml;M</span>
+		</div>
+	</div>
 
 	<div class="cont">
-
-		<div class="hero">
-			<div class="logo">
-				<span class="word" data-text="BIYO">BIYO</span>
-				<span class="word" data-text="DURUM">DURUM</span>
-			</div>
-		</div>
 
 		<h1>Nos Menus</h1>
 
