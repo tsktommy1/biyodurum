@@ -4,7 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Biyo D&uuml;r&uuml;m</title>
+    <link rel="icon" href="./assets/logo.png"></link>
 	<style>
+
+        @font-face {
+            font-family: "Passajero";
+            src: url(./assets/Pasajero.otf);
+        }
 
         @media only screen and (max-width: 600px) {
             .parallax {
@@ -127,13 +133,12 @@
 		.logo {
 			padding: 1rem;
 			background: #fff;
-			top: 50%;
-			left: 50%;
-            height: 150px;
-            width: 150px;
-			transform: translate(-50%, -50%);
+            height: 100%;
+            width: 50rem;
+            left: 50%;
+            transform: translateX(-50%);
+            box-sizing: border-box;
 			position: absolute;
-			border-radius: 50%;
 			overflow: hidden;
 		}
 
@@ -162,14 +167,33 @@
 			color: #fff !important;
 		}
 
+        .word {
+            font-family: "Passajero";
+            font-size: 5rem;
+            color: #c8b49c;
+            position: absolute;
+            width: calc(100% - 2rem);
+            top: calc(50% - 2.5rem);
+            height: 5rem;
+            text-align: center;
+            transform-origin: center;
+        }
+        .word:nth-child(1) {
+            transform: translate(-12%, 25%) rotate(-45deg);
+        }
+        .word:nth-child(2) {
+            transform: translate(10%, 0) rotate(45deg);
+        }
+
 	</style>
 </head>
 <body>
 
 
 	<div class="hero">
-		<div class="logo">
-			<img src="./assets/logo.png" alt="Biyo Durum Logo">
+        <div class="logo">
+            <span class="word">BIYO&nbsp;</span>
+            <span class="word">DURUM</span>
 		</div>
 	</div>
 
