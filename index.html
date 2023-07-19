@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Biyo D&uuml;r&uuml;m</title>
-    <link rel="icon" href="./assets/logo.png"></link>
+	<link rel="icon" href="./assets/logo.png">
+	</link>
 	<style>
-
-        @font-face {
-            font-family: "Passajero";
-            src: url(./assets/Pasajero.otf);
-        }
-
-        @media only screen and (max-width: 600px) {
-            .parallax {
-                height: calc(50% + 4rem) !important;
-            }
-            .card {
-                width: 16rem !important;
-                height: 16rem !important;
-            }
-        }
+		@font-face {
+			font-family: "Passajero";
+			src: url(./assets/Pasajero.otf);
+		}
 
 		body {
 			margin: unset;
@@ -34,27 +25,30 @@
 			-ms-user-select: none;
 			-o-user-select: none;
 			user-select: none;
-            background: #fff;
+			background: #fff;
 		}
+
 		img {
 			-webkit-user-drag: none;
 			user-drag: none;
 		}
+
 		.parallax {
 			width: 100%;
 			height: 50%;
 			background-image: url(./assets/image00001.jpeg);
 			background-size: cover;
-            background-position: center;
+			background-position: center;
 			position: fixed;
 		}
 
 		.hero {
-            overflow: hidden;
+			overflow: hidden;
 			position: relative;
 			width: 100%;
-			height: 50vh;
+			height: 40vh;
 			z-index: 1;
+			/* background: radial-gradient(at bottom, #fff, #e3dfd3); */
 		}
 
 		.cont {
@@ -62,14 +56,14 @@
 			width: 100%;
 			height: max-content;
 			z-index: 2;
-            background: #ddd;
+			background: #ddd;
 			background-image: url(./assets/wood.jpg);
 			background-size: cover;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			gap: 2rem;
-			padding-top: 2rem;
+			/* padding-top: 2rem; */
 			padding-bottom: 2rem;
 			box-sizing: border-box;
 		}
@@ -83,67 +77,64 @@
 			position: relative;
 		}
 
-		.card > img {
+		.card>img {
 			object-fit: cover;
 			object-position: center;
 			height: 100%;
 			width: 100%;
 		}
 
-		.card > .info {
+		.card>.info {
 			box-sizing: border-box;
 			padding: .5rem;
 			background: #fff8;
 			backdrop-filter: blur(8px);
 			width: 24rem;
 			height: 2.5rem;
-			bottom: -2.5rem;
+			bottom: 0;
+			/* bottom: -2.5rem; */
 			position: absolute;
-			transition: bottom .2s;
+			/* transition: bottom .2s; */
 			overflow-y: auto;
 		}
 
-		.card > .info > h2, .card > .info > h3 {
+		.card>.info>h2,
+		.card>.info>h3 {
 			margin: unset;
 		}
-        
-        .card > .info > h2 {
-            font-size: 1.25rem;
-        }
 
-		.card:hover > .info {
-		    bottom: 0rem;
+		.card>.info>h2 {
+			font-size: 1.25rem;
 		}
 
-		.card > .info::-webkit-scrollbar {
+		.card>.info::-webkit-scrollbar {
 			width: .5rem;
 		}
 
-		.card > .info::-webkit-scrollbar-track {
+		.card>.info::-webkit-scrollbar-track {
 			background: #fff content-box;
 			border-radius: .25rem;
 			border: .125rem solid transparent;
 		}
 
-		.card > .info::-webkit-scrollbar-thumb {
+		.card>.info::-webkit-scrollbar-thumb {
 			background: #000 content-box;
 			border-radius: .25rem;
 			border: .125rem solid transparent;
 		}
 
 		.logo {
-			padding: 1rem;
-			background: #fff;
-            height: 100%;
-            width: 50rem;
-            left: 50%;
-            transform: translateX(-50%);
-            box-sizing: border-box;
+			height: 100%;
+			top: 15%;
+			width: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			box-sizing: border-box;
 			position: absolute;
 			overflow: hidden;
 		}
 
-		.cont > h1 {
+		.cont>h1 {
 			width: 100%;
 			color: white;
 			text-align: center;
@@ -151,54 +142,115 @@
 		}
 
 		footer {
-            position: relative;
-            width: 100%;
-            z-index: 1;
+			position: relative;
+			width: 100%;
+			z-index: 1;
 			padding: 2rem 0;
 			display: flex;
-            font-size: 1.5rem;
+			font-size: 1.5rem;
 			flex-flow: column;
 			align-items: center;
+			text-align: center;
+			word-break: keep-all;
+			text-wrap: balance;
 			gap: .25rem;
 			font-weight: 700;
-			color: #fff !important;	
-		}
-
-		a, a:visited, a:hover, a:active {
 			color: #fff !important;
 		}
 
-        .word {
-            font-family: "Passajero";
-            font-size: 5rem;
-            color: #c8b49c;
-            position: absolute;
-            width: calc(100% - 2rem);
-            top: calc(50% - 2.5rem);
-            height: 5rem;
-            text-align: center;
-            transform-origin: center;
-        }
-        .word:nth-child(1) {
-            transform: translate(-12%, 25%) rotate(-45deg);
-        }
-        .word:nth-child(2) {
-            transform: translate(10%, 0) rotate(45deg);
-        }
+		a,
+		a:visited,
+		a:hover,
+		a:active {
+			color: #fff !important;
+		}
 
+		.word {
+			font-family: "Passajero";
+			font-size: 6rem;
+			color: #d1c7bd;
+			position: absolute;
+			width: calc(100% - 2rem);
+			top: calc(50% - 4rem);
+			height: 6rem;
+			text-align: center;
+			transform-origin: center;
+			text-shadow: 4px 4px 0 #ca965d;
+		}
+
+		.word:nth-child(1) {
+			transform: translate(-150px, 0);
+		}
+
+		.word:nth-child(2) {
+			transform: translate(150px, 0);
+		}
+
+		@media only screen and (min-width: 1200px) {
+
+			.word {
+				font-size: 10rem;
+				height: 10rem;
+			}
+
+			.word:nth-child(1) {
+				transform: translate(-250px, 0);
+			}
+
+			.word:nth-child(2) {
+				transform: translate(250px, 0);
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.parallax {
+				height: calc(50% + 4rem) !important;
+			}
+
+			.card {
+				width: 16rem !important;
+				height: 16rem !important;
+			}
+
+			.logo {
+				width: 50rem;
+			}
+
+			.word {
+				font-size: 5rem;
+				height: 5rem;
+			}
+
+			.word:nth-child(1) {
+				transform: translate(-12%, 25%) rotate(-45deg);
+			}
+
+			.word:nth-child(2) {
+				transform: translate(10%, 0) rotate(45deg);
+			}
+		}
+
+		/* .word::before {
+			content: attr(data-text);
+			font-size: 5rem;
+
+			color: #94734b;
+		} */
 	</style>
 </head>
+
 <body>
 
 
-	<div class="hero">
-        <div class="logo">
-            <span class="word">BIYO&nbsp;</span>
-            <span class="word">DURUM</span>
-		</div>
-	</div>
 
 	<div class="cont">
+
+		<div class="hero">
+			<div class="logo">
+				<span class="word" data-text="BIYO">BIYO</span>
+				<span class="word" data-text="DURUM">DURUM</span>
+			</div>
+		</div>
 
 		<h1>Nos Menus</h1>
 
@@ -239,11 +291,12 @@
 			</div>
 		</div>
 
-        <footer>
-            <span>144 rue du Faubourg Saint-Antoine</span>
-            <a href="tel:+33782476538">+33782476538</a>
-        </footer>
+		<footer>
+			<span>144 rue du Faubourg <span style="white-space: pre;">Saint-Antoine</span></span>
+			<a href="tel:+33782476538">+33782476538</a>
+		</footer>
 	</div>
 
 </body>
+
 </html>
