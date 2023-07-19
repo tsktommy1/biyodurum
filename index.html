@@ -8,7 +8,7 @@
 
         @media only screen and (max-width: 600px) {
             .parallax {
-                height: calc(50% + 2rem) !important;
+                height: calc(50% + 4rem) !important;
             }
             .card {
                 width: 16rem !important;
@@ -79,8 +79,8 @@
 		.card > img {
 			object-fit: cover;
 			object-position: center;
-			height: 24rem;
-			width: 24rem;
+			height: 100%;
+			width: 100%;
 		}
 
 		.card > .info {
@@ -89,8 +89,8 @@
 			background: #fff8;
 			backdrop-filter: blur(8px);
 			width: 24rem;
-			height: 3rem;
-			bottom: -3rem;
+			height: 2.5rem;
+			bottom: -2.5rem;
 			position: absolute;
 			transition: bottom .2s;
 			overflow-y: auto;
@@ -99,6 +99,10 @@
 		.card > .info > h2, .card > .info > h3 {
 			margin: unset;
 		}
+        
+        .card > .info > h2 {
+            font-size: 1.25rem;
+        }
 
 		.card:hover > .info {
 		    bottom: 0rem;
