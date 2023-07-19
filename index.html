@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Biyo D&uuml;r&uuml;m</title>
 	<style>
+
+        @media only screen and (max-width: 600px) {
+            .parallax {
+                height: calc(50% + 2rem) !important;
+            }
+            .card {
+                width: 16rem !important;
+                height: 16rem !important;
+            }
+        }
+
 		body {
 			margin: unset;
 			display: flex;
@@ -78,10 +89,10 @@
 			background: #fff8;
 			backdrop-filter: blur(8px);
 			width: 24rem;
-			height: 12rem;
-			top: 24rem;
+			height: 3rem;
+			bottom: -3rem;
 			position: absolute;
-			transition: top .2s;
+			transition: bottom .2s;
 			overflow-y: auto;
 		}
 
@@ -90,7 +101,7 @@
 		}
 
 		.card:hover > .info {
-			top: 12rem;
+		    bottom: 0rem;
 		}
 
 		.card > .info::-webkit-scrollbar {
@@ -167,48 +178,36 @@
 			<img src="./assets/image00003.jpeg">
 			<div class="info">
 				<h2>Le D&uuml;r&uuml;m Agneau</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 		<div class="card">
 			<img src="./assets/image00002.jpeg">
 			<div class="info">
 				<h2>Le G&ouml;zleme</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 		<div class="card">
 			<img src="./assets/image00004.jpeg">
 			<div class="info">
 				<h2>Le D&uuml;r&uuml;m Poulet</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 		<div class="card">
 			<img src="./assets/image00006.jpeg">
 			<div class="info">
 				<h2>Le D&uuml;r&uuml;m V&eacute;g&eacute;tarien</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 		<div class="card">
 			<img src="./assets/image00005.jpeg">
 			<div class="info">
 				<h2>Le Lahmacum</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 		<div class="card">
 			<img src="./assets/image00007.jpeg">
 			<div class="info">
 				<h2>Le D&uuml;r&uuml;m Viande Hach&eacute;e</h2>
-				<h3>Ingredients:</h3>
-				<ul></ul>
 			</div>
 		</div>
 
