@@ -2,253 +2,410 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Biyo D&uuml;r&uuml;m</title>
-	<link rel="icon" href="./assets/logo.png">
-	</link>
-	<style>
-		@font-face {
-			font-family: "Passajero";
-			src: url(./assets/Pasajero.otf);
-		}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biyo D&uuml;r&uuml;m</title>
+  <link rel="icon" href="./assets/logo.png">
+  </link>
+  <style>
+    @font-face {
+      font-family: "Passajero";
+      src: url(./assets/Pasajero.otf);
+    }
 
-		body {
-			margin: unset;
-			display: flex;
-			flex-flow: column;
-			font-family: Arial, Arial, Helvetica, sans-serif;
-			font-size: 16px;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			-o-user-select: none;
-			user-select: none;
-			background: #fff;
-		}
+    body {
+      margin: unset;
+      display: flex;
+      flex-flow: column;
+      font-family: Arial, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      min-height: 100vh;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      background: #fff;
+    }
 
-		img {
-			-webkit-user-drag: none;
-			user-drag: none;
-		}
+    img {
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
 
-		.parallax {
-			width: 100%;
-			height: 50%;
-			background-image: url(./assets/image00001.jpeg);
-			background-size: cover;
-			background-position: center;
-			position: fixed;
-		}
+    .parallax {
+      width: 100%;
+      height: 50%;
+      background-image: url(./assets/image00001.jpeg);
+      background-size: cover;
+      background-position: center;
+      position: fixed;
+    }
 
-		.hero {
-			overflow: hidden;
-			position: relative;
-			width: 100%;
-			z-index: 1;
-			/* background: radial-gradient(at bottom, #fff, #e3dfd3); */
-		}
+    .hero {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      /* background: radial-gradient(at bottom, #fff, #e3dfd3); */
+    }
 
-		.cont {
-			position: relative;
-			width: 100%;
-			height: max-content;
-			z-index: 2;
-			background: #ddd;
-			background-image: url(./assets/wood.jpg);
-			background-size: cover;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 2rem;
-			/* padding-top: 2rem; */
-			padding-bottom: 2rem;
-			box-sizing: border-box;
-		}
+    .cont {
+      position: relative;
+      width: 100%;
+      flex-grow: 1;
+      height: max-content;
+      z-index: 2;
+      background: #ddd;
+      background-image: url(./assets/wood.jpg);
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0 2rem;
+      padding-bottom: 2rem;
+      box-sizing: border-box;
+    }
 
-		.card {
-			overflow: hidden;
-			background: #ccc;
-			border-radius: 1rem;
-			height: 24rem;
-			width: 24rem;
-			position: relative;
-		}
+    .card {
+      overflow: hidden;
+      background: #ccc;
+      border-radius: 1rem;
+      height: 24rem;
+      width: 24rem;
+      position: relative;
+      box-shadow: 0 0 10px 5px #fff0;
+      transition: box-shadow .2s;
+      cursor: pointer;
+    }
 
-		.card>img {
-			object-fit: cover;
-			object-position: center;
-			height: 100%;
-			width: 100%;
-		}
+    .card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 10px 5px #fff0 inset;
+      transition: box-shadow .2s;
+      z-index: 1;
+    }
 
-		.card>.info {
-			box-sizing: border-box;
-			padding: .5rem;
-			background: #fff8;
-			backdrop-filter: blur(8px);
-			width: 24rem;
-			height: 2.5rem;
-			bottom: 0;
-			/* bottom: -2.5rem; */
-			position: absolute;
-			/* transition: bottom .2s; */
-			overflow-y: auto;
-		}
+    .card:hover::after {
+      box-shadow: 0 0 10px 5px #ffff inset;
+    }
 
-		.card>.info>h2,
-		.card>.info>h3 {
-			margin: unset;
-		}
+    .card>img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+      transform: scale(1);
+      transition: transform .2s;
+    }
 
-		.card>.info>h2 {
-			font-size: 1.25rem;
-		}
+    .card:hover>img {
+      transform: scale(1.25);
+    }
 
-		.card>.info::-webkit-scrollbar {
-			width: .5rem;
-		}
+    .card:hover {
+      box-shadow: 0 0 10px 5px #ffff;
+    }
 
-		.card>.info::-webkit-scrollbar-track {
-			background: #fff content-box;
-			border-radius: .25rem;
-			border: .125rem solid transparent;
-		}
+    .card>.info {
+      box-sizing: border-box;
+      padding: .5rem;
+      background: #fff8;
+      backdrop-filter: blur(8px);
+      width: 24rem;
+      height: 3.5rem;
+      bottom: 0;
+      width: 100%;
+      /* bottom: -2.5rem; */
+      position: absolute;
+      /* transition: bottom .2s; */
+      overflow: hidden;
+    }
 
-		.card>.info::-webkit-scrollbar-thumb {
-			background: #000 content-box;
-			border-radius: .25rem;
-			border: .125rem solid transparent;
-		}
+    .card>.info>h2,
+    .card>.info>h3,
+    #overlay-title {
+      margin: unset;
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
-		.logo {
-			width: 100%;
-			box-sizing: border-box;
-			overflow: hidden;
-			padding-top: .5rem;
-			text-align: center;
-		}
+    .card>.info>h2 {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+    }
 
-		.cont>h1 {
-			width: 100%;
-			color: white;
-			text-align: center;
-			margin: unset;
-		}
 
-		footer {
-			position: relative;
-			width: 100%;
-			z-index: 1;
-			padding: 2rem 0;
-			display: flex;
-			font-size: 1.5rem;
-			flex-flow: column;
-			align-items: center;
-			text-align: center;
-			word-break: keep-all;
-			text-wrap: balance;
-			gap: .25rem;
-			font-weight: 700;
-			color: #fff !important;
-		}
+    .price {
+      align-self: flex-end;
+    }
 
-		a,
-		a:visited,
-		a:hover,
-		a:active {
-			color: #fff !important;
-		}
+    /*
+    .card>.info::-webkit-scrollbar {
+      width: .5rem;
+    }
 
-		.word {
-			font-family: "Passajero";
-			font-size: 6rem;
-			color: #ca965d;
-			width: calc(100%);
-			height: 6rem;
-			text-align: center;
-		}
+    .card>.info::-webkit-scrollbar-track {
+      background: #fff content-box;
+      border-radius: .25rem;
+      border: .125rem solid transparent;
+    }
 
-		@media only screen and (min-width: 1200px) {
+    .card>.info::-webkit-scrollbar-thumb {
+      background: #000 content-box;
+      border-radius: .25rem;
+      border: .125rem solid transparent;
+    } */
 
-			.word {
-				font-size: 10rem;
-				height: 10rem;
-			}
+    .logo {
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding-top: .5rem;
+      text-align: center;
+    }
 
-		}
+    .cont>h1 {
+      width: 100%;
+      color: white;
+      text-align: center;
+      margin: unset;
+    }
 
-		@media only screen and (max-width: 600px) {
-			.card {
-				width: 16rem !important;
-				height: 16rem !important;
-			}
+    footer {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      padding: 2rem 0;
+      display: flex;
+      font-size: 1.5rem;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+      word-break: keep-all;
+      text-wrap: balance;
+      gap: .25rem;
+      font-weight: 700;
+      color: #fff !important;
+    }
 
-			.word {
-				font-size: 5rem;
-				height: 5rem;
-			}
-		}
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #fff !important;
+    }
 
-	</style>
+    .word {
+      font-family: "Passajero";
+      font-size: 6rem;
+      color: #ca965d;
+      width: calc(100%);
+      height: 6rem;
+      text-align: center;
+    }
+
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .5);
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s;
+      backdrop-filter: blur(8px);
+    }
+
+    #overlay-container {
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 0 10px 5px #fff0;
+      position: relative;
+      transition: transform .3s;
+      transform: scale(0.5);
+    }
+
+    #overlay-container h2 {
+      margin-top: unset;
+    }
+
+    #overlay-image {
+      width: 100%;
+      max-width: 32rem;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    #overlay.active {
+      pointer-events: all;
+      opacity: 1;
+    }
+
+    #overlay.active #overlay-container {
+      pointer-events: auto;
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+      .word {
+        font-size: 10rem;
+        height: 10rem;
+      }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+      .card {
+        width: 16rem !important;
+        height: 16rem !important;
+      }
+
+      .word {
+        font-size: 5rem;
+        height: 5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-	<div class="hero">
-		<div class="logo">
-			<span class="word">BIYO D&Uuml;R&Uuml;M</span>
-		</div>
-	</div>
+  <div class="hero">
+    <div class="logo">
+      <span class="word">BIYO D&Uuml;R&Uuml;M</span>
+    </div>
+  </div>
 
-	<div class="cont">
+  <div class="cont">
 
-		<h1>Nos Menus</h1>
+    <h1>Nos Menus</h1>
 
-		<div class="card">
-			<img src="./assets/image00003.jpeg">
-			<div class="info">
-				<h2>Le D&uuml;r&uuml;m Agneau</h2>
-			</div>
-		</div>
-		<div class="card">
-			<img src="./assets/image00002.jpeg">
-			<div class="info">
-				<h2>Le G&ouml;zleme</h2>
-			</div>
-		</div>
-		<div class="card">
-			<img src="./assets/image00004.jpeg">
-			<div class="info">
-				<h2>Le D&uuml;r&uuml;m Poulet</h2>
-			</div>
-		</div>
-		<div class="card">
-			<img src="./assets/image00006.jpeg">
-			<div class="info">
-				<h2>Le D&uuml;r&uuml;m V&eacute;g&eacute;tarien</h2>
-			</div>
-		</div>
-		<div class="card">
-			<img src="./assets/image00005.jpeg">
-			<div class="info">
-				<h2>Le Lahmacum</h2>
-			</div>
-		</div>
-		<div class="card">
-			<img src="./assets/image00007.jpeg">
-			<div class="info">
-				<h2>Le D&uuml;r&uuml;m Viande Hach&eacute;e</h2>
-			</div>
-		</div>
+    <div class="card" id="agneau">
+      <img src="./assets/image00003.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le D&uuml;r&uuml;m Agneau</span><span class="price">10,50&euro;</span></h2>
+      </div>
+    </div>
+    <div class="card" id="viande_hachee">
+      <img src="./assets/image00007.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le D&uuml;r&uuml;m Viande Hach&eacute;e</span><span class="price">9,00&euro;</span></h2>
+      </div>
+    </div>
+    <div class="card" id="poulet">
+      <img src="./assets/image00004.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le D&uuml;r&uuml;m Poulet</span><span class="price">9,00&euro;</span></h2>
+      </div>
+    </div>
+    <div class="card" id="vegetarien">
+      <img src="./assets/image00006.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le D&uuml;r&uuml;m V&eacute;g&eacute;tarien</span><span class="price">9,00&euro;</span></h2>
+      </div>
+    </div>
+    <div class="card" id="gozleme">
+      <img src="./assets/image00002.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le G&ouml;zleme</span><span class="price">6,00&euro;</span></h2>
+      </div>
+    </div>
+    <div class="card" id="lahmacun">
+      <img src="./assets/image00005.jpeg" loading="lazy">
+      <div class="info">
+        <h2><span>Le Lahmacun</span><span class="price">6,00&euro;</span></h2>
+      </div>
+    </div>
 
-		<footer>
-			<span>144 rue du Faubourg <span style="white-space: pre;">Saint-Antoine</span></span>
-			<a href="tel:+33782476538">+33782476538</a>
-		</footer>
-	</div>
+    <footer>
+      <span>144 rue du Faubourg <span style="white-space: pre;">Saint-Antoine</span></span>
+      <a href="tel:+33782476538">+33782476538</a>
+    </footer>
+  </div>
 
+  <!-- <div id="overlay"> -->
+  <div id="overlay">
+    <div id="overlay-container">
+      <img id="overlay-image">
+      <div style="padding: 1rem;">
+        <h2 id="overlay-title"></h2>
+        <p id="overlay-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ingredients = {
+      "agneau": ["salade", "tomate", "oignon", "persil", "roquette", "agneau"],
+      "gozleme": ["epinard", "fromage", "feta", "persil", "oignon", "huile d'olive"],
+      "poulet": ["salade", "tomate", "oignon", "persil", "roquette", "poulet"],
+      "vegetarien": ["salade", "tomate", "oignon", "persil", "roquette"],
+      "lahmacun": ["viande hachée", "poivron", "oignon", "persil"],
+      "viande_hachee": ["salade", "tomate", "oignon", "persil", "roquette", "viande hachée"]
+    };
+
+    const spices = {
+      "agneau": ["sumak", "paprika"],
+      "gozleme": ["sumak", "paprika"],
+      "poulet": ["sumak", "paprika"],
+      "vegetarien": ["sumak", "paprika"],
+      "lahmacun": ["sumak", "paprika"],
+      "viande_hachee": ["sumak", "paprika"]
+    };
+
+    // show overlay when a card is clicked
+    // and change content depending on the card
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.getElementById('overlay').classList.add('active');
+        document.getElementById('overlay-image').src = card.querySelector('img').src;
+        document.getElementById('overlay-title').innerHTML = card.querySelector('.info>h2').innerHTML;
+        // ingredients in a ul
+        const ul = document.createElement('ul');
+        ingredients[card.id].forEach(ingredient => {
+          const li = document.createElement('li');
+          li.textContent = ingredient;
+          ul.appendChild(li);
+        });
+        document.getElementById('overlay-content').textContent = '';
+        document.getElementById('overlay-content').appendChild(ul);
+      });
+    });
+
+    // hide overlay when clicking outside or pressing escape
+    document.getElementById('overlay').addEventListener('click', () => {
+      if (event.target.id === "overlay")
+        document.getElementById('overlay').classList.remove('active');
+    });
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.getElementById('overlay').classList.remove('active');
+      }
+    });
+
+
+  </script>
 </body>
 
 </html>
