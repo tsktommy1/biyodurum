@@ -161,7 +161,7 @@ const menu = [
 		desc: {
 			en: "salad, tomato, onion, parsley, rocket, beef",
 			fr: "salade, tomate, oignon, persil, roquette, viande hâchée",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Rind",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Hackfleisch",
 			es: "Ensalada, tomate, cebolla, perejil, rucula, carne",
 		},
 		price: "€11.00"
@@ -189,10 +189,10 @@ const menu = [
 			es: "Dürüm vegetariano",
 		},
 		desc: {
-			en: "salad, tomato, onion, parsley, rocket, vegetarian",
-			fr: "salade, tomate, oignon, persil, roquette, végétarien",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Vegetarier",
-			es: "Ensalada, tomate, cebolla, perejil, rucula, vegetariano",
+			en: "salad, tomato, onion, parsley, rocket",
+			fr: "salade, tomate, oignon, persil, roquette",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola",
+			es: "Ensalada, tomate, cebolla, perejil, rucula",
 		},
 		price: "€12.00"
 	},
@@ -204,10 +204,10 @@ const menu = [
 			es: "Gozleme",
 		},
 		desc: {
-			en: "salad, tomato, onion, parsley, rocket, gozleme",
-			fr: "salade, tomate, oignon, persil, roquette, gozleme",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Gozleme",
-			es: "Ensalada, tomate, cebolla, perejil, rucula, gozleme",
+			en: "spinach, cheese, feta, parsley, onion, olive oil",
+			fr: "epinard, fromage, feta, persil, oignon, huile d'olive",
+			de: "Spinat, Käse, Feta, Petersilie, Zwiebel, Olivenöl",
+			es: "espinacas, queso, feta, perejil, cebolla, aceite de oliva",
 		},
 		price: "€7.00"
 	},
@@ -219,10 +219,10 @@ const menu = [
 			es: "Lahmacun",
 		},
 		desc: {
-			en: "salad, tomato, onion, parsley, rocket, lahmacun",
-			fr: "salade, tomate, oignon, persil, roquette, lahmacun",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Lahmacun",
-			es: "Ensalada, tomate, cebolla, perejil, rucula, lahmacun",
+			en: "minced meat, pepper, onion, parsley",
+			fr: "viande hâchée, poivron, oignon, persil",
+			de: "Hackfleisch, Paprika, Zwiebel, Petersilie",
+			es: "carne picada, pimiento, cebolla, perejil",
 		},
 		price: "€5.00"
 	},
