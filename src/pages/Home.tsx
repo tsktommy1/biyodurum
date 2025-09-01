@@ -355,7 +355,7 @@ export default function Landing() {
 					</div>
 					<div class="aspect-video md:aspect-square rounded-3xl overflow-hidden shadow-sm">
 						<img
-							src="src/assets/hero.jpeg"
+							src="/hero.jpeg"
 							alt="Dürüms placed on a wooden plate"
 							class="h-full w-full object-cover"
 							loading="lazy"
