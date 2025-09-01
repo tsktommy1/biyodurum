@@ -50,7 +50,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		cta_menu: "View Menu",
 		about_title: "About",
 		about_body:
-		"We celebrate simplicity: live-fire cooking, seasonal ingredients, and a cellar of natural wines.",
+		"Biyo Dürüm is a Turkish restaurant that invites guests to discover the authentic flavors of Turkey. Our establishment offers a unique dining experience with a rich and varied menu that celebrates Turkish gastronomic traditions. From savory dürüm to fragrant grilled meats, each dish is prepared with fresh, quality ingredients. Our warm and welcoming atmosphere is ideal for sharing a meal with friends or family. Come to Biyo Dürüm for an unforgettable culinary journey that will awaken your senses.",
 		menu_title: "Menu",
 		menu_sub: "A snapshot of tonight's favorites",
 		location_title: "Find Us",
@@ -78,7 +78,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		cta_menu: "Speisekarte",
 		about_title: "Über uns",
 		about_body:
-		"Wir feiern Einfachheit: Holzfeuerküche, saisonale Zutaten und ein Keller mit Naturweinen.",
+		"Biyo Dürüm ist ein türkisches Restaurant, das seine Gäste einlädt, die authentischen Aromen der Türkei zu entdecken. Unser Haus bietet ein einzigartiges kulinarisches Erlebnis mit einer reichhaltigen und abwechslungsreichen Speisekarte, die die türkischen gastronomischen Traditionen zelebriert. Von herzhaftem Dürüm bis hin zu duftendem Grillfleisch wird jedes Gericht mit frischen, hochwertigen Zutaten zubereitet. Unsere warme und einladende Atmosphäre lädt zum gemeinsamen Essen mit Freunden oder der Familie ein. Kommen Sie ins Biyo Dürüm und erleben Sie eine unvergessliche kulinarische Reise, die Ihre Sinne erweckt.",
 		menu_title: "Speisekarte",
 		menu_sub: "Ein Blick auf die Favoriten des Abends",
 		location_title: "Anfahrt",
@@ -106,7 +106,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		cta_menu: "Ver carta",
 		about_title: "Sobre nosotros",
 		about_body:
-		"Celebramos la sencillez: fuego vivo, ingredientes de temporada y una bodega de vinos naturales.",
+		"Biyo Dürüm es un restaurante turco que invita a descubrir los auténticos sabores de Turquía. Nuestro establecimiento ofrece una experiencia gastronómica única con un menú rico y variado que celebra las tradiciones gastronómicas turcas. Desde un sabroso dürüm hasta exquisitas carnes a la parrilla, cada plato se prepara con ingredientes frescos y de calidad. Nuestro ambiente cálido y acogedor es ideal para compartir una comida con amigos o familiares. Ven a Biyo Dürüm y vive una experiencia culinaria inolvidable que despertará tus sentidos.",
 		menu_title: "Carta",
 		menu_sub: "Un vistazo a los favoritos de esta noche",
 		location_title: "Dónde estamos",
