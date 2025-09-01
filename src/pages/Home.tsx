@@ -471,7 +471,7 @@ export default function Landing() {
 						<div class="font-medium mb-2">{t.contact_title}</div>
 						<a href="mailto:hello@biyodurum.com" class="text-zinc-600">hello@biyodurum.com</a>
 						<br />
-						<a href="https://www.instagram.com/biyodurum/" class="text-zinc-600">Instagram</a>
+						<a href="https://www.instagram.com/biyo_durum/" class="text-zinc-600">Instagram</a>
 						<br />
 						<a href="tel:+33782476538" class="text-zinc-600">+33 7 82 47 65 38</a>
 					</div>
