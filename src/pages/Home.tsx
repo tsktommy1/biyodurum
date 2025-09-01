@@ -34,8 +34,8 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		contact_hours: "Horaires",
 		contact_open: [
 			"Lun: Fermé",
-			"Mar-Ven: 11:30-23:00",
-			"Sam-Dim: 11:30-23:00",
+			"Mar-Ven: 11:30-23:30",
+			"Sam-Dim: 11:30-23:30",
 		],
 		contact_addr: "Adresse",
 		footer_note: "© Biyo Dürüm. Tous droits réservés.",
@@ -62,8 +62,8 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		contact_hours: "Hours",
 		contact_open: [
 			"Mon: Closed",
-			"Tue-Fri: 11:30am-11:00pm",
-			"Sat-Sun: 11:30am-11:00pm",
+			"Tue-Fri: 11:30am-11:30pm",
+			"Sat-Sun: 11:30am-11:30pm",
 		],
 		contact_addr: "Address",
 		footer_note: "© Biyo Dürüm. All rights reserved.",
@@ -90,8 +90,8 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		contact_hours: "Öffnungszeiten",
 		contact_open: [
 			"Mon: Geschlossen",
-			"Tue-Fri: 11:30-23:00",
-			"Sat-Sun: 11:30-23:00",
+			"Tue-Fri: 11:30-23:30",
+			"Sat-Sun: 11:30-23:30",
 		],
 		contact_addr: "Adresse",
 		footer_note: "© Biyo Dürüm. Alle Rechte vorbehalten.",
@@ -118,8 +118,8 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 		contact_hours: "Horario",
 		contact_open: [
 			"Lun: Cerrado",
-			"Mar-Vie: 11:30-23:00",
-			"Sab-Dom: 11:30-23:00",
+			"Mar-Vie: 11:30-23:30",
+			"Sab-Dom: 11:30-23:30",
 		],
 		contact_addr: "Dirección",
 		footer_note: "© Biyo Dürüm. Todos los derechos reservados.",
