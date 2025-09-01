@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html {
+	scroll-behavior: smooth;
+}
+
+h2::after {
+	content: "";
+	display: block;
+	position: relative;
+	width: 50%;
+	margin-left: 25%;
+	height: 1px;
+	background: black;
+}
