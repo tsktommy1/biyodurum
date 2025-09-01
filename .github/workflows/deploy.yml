@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /opt/
+            cd /opt/biyo
             git pull origin main
             docker compose down --remove-orphans || true
             docker-compose up -d --build
