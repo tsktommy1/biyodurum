@@ -138,21 +138,6 @@ const flag: Record<Lang, string> = {
 const menu = [
 	{
 		name: {
-			en: "Lamb Dürüm",
-			fr: "Dürüm Agneau",
-			de: "Lamm Dürüm",
-			es: "Dürüm de cordero",
-		},
-		desc: {
-			en: "salad, tomato, onion, parsley, rocket, lamb",
-			fr: "salade, tomate, oignon, persil, roquette, agneau",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Lamm",
-			es: "Ensalada, tomate, cebolla, perejil, rucula, cordero",
-		},
-		price: "€13.00"
-	},
-	{
-		name: {
 			en: "Beef Dürüm",
 			fr: "Dürüm Viande Hâchée",
 			de: "Rind Dürüm",
@@ -164,7 +149,7 @@ const menu = [
 			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Hackfleisch",
 			es: "Ensalada, tomate, cebolla, perejil, rucula, carne",
 		},
-		price: "€11.00"
+		price: "€10.00"
 	},
 	{
 		name: {
@@ -179,7 +164,37 @@ const menu = [
 			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Hühner",
 			es: "Ensalada, tomate, cebolla, perejil, rucula, pollo",
 		},
-		price: "€12.00"
+		price: "€9.50"
+	},
+	{
+		name: {
+			en: "Lamb Dürüm",
+			fr: "Dürüm Agneau",
+			de: "Lamm Dürüm",
+			es: "Dürüm de cordero",
+		},
+		desc: {
+			en: "salad, tomato, onion, parsley, rocket, lamb",
+			fr: "salade, tomate, oignon, persil, roquette, agneau",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Lamm",
+			es: "Ensalada, tomate, cebolla, perejil, rucula, cordero",
+		},
+		price: "€11.00"
+	},
+	{
+		name: {
+			en: "Lamb Liver Dürüm",
+			fr: "Dürüm Foie d'Agneau",
+			de: "Lammleber Dürüm",
+			es: "Dürüm Hígado de Cordero",
+		},
+		desc: {
+			en: "salad, tomato, onion, parsley, rocket, lamb",
+			fr: "salade, tomate, oignon, persil, roquette, agneau",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Lamm",
+			es: "Ensalada, tomate, cebolla, perejil, rucula, cordero",
+		},
+		price: "€9.00"
 	},
 	{
 		name: {
@@ -194,7 +209,22 @@ const menu = [
 			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola",
 			es: "Ensalada, tomate, cebolla, perejil, rucula",
 		},
-		price: "€12.00"
+		price: "€8.00"
+	},
+	{
+		name: {
+			en: "Vegan Dürüm",
+			fr: "Dürüm Végan",
+			de: "Vegan Dürüm",
+			es: "Dürüm vegano",
+		},
+		desc: {
+			en: "salad, tomato, onion, parsley, rocket",
+			fr: "salade, tomate, oignon, persil, roquette",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola",
+			es: "Ensalada, tomate, cebolla, perejil, rucula",
+		},
+		price: "€8.00"
 	},
 	{
 		name: {
@@ -209,7 +239,7 @@ const menu = [
 			de: "Spinat, Käse, Feta, Petersilie, Zwiebel, Olivenöl",
 			es: "espinacas, queso, feta, perejil, cebolla, aceite de oliva",
 		},
-		price: "€7.00"
+		price: "€6.00"
 	},
 	{
 		name: {
@@ -224,7 +254,7 @@ const menu = [
 			de: "Hackfleisch, Paprika, Zwiebel, Petersilie",
 			es: "carne picada, pimiento, cebolla, perejil",
 		},
-		price: "€5.00"
+		price: "€4.00"
 	},
 ];
 
