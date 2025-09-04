@@ -39,6 +39,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_GOOGLE_PLACES_API_KEY: ${{ secrets.VITE_GOOGLE_PLACES_API_KEY }}
+          VITE_GOOGLE_PLACES_ID: ${{ secrets.VITE_GOOGLE_PLACES_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
