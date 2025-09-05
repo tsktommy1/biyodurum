@@ -499,7 +499,7 @@ export default function Landing() {
 				<div class="mx-auto max-w-5xl grid md:grid-cols-3 gap-6">
 					<div class="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
 						<div class="font-medium mb-2">{t.contact_title}</div>
-						<a href="mailto:hello@biyodurum.com" class="text-zinc-600">hello@biyodurum.com</a>
+						<a href="mailto:biyodurum75@.com" class="text-zinc-600">biyodurum75@gmail.com</a>
 						<br />
 						<a href="https://www.instagram.com/biyo_durum/" class="text-zinc-600">Instagram</a>
 						<br />
