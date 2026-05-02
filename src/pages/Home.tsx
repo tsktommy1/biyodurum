@@ -16,7 +16,7 @@ const MAP_QUERY = encodeURIComponent("Biyo Durum Paris");
 const i18n: Record<Lang, Record<string, string | string[]>> = {
 	fr: {
 		brand: "Biyo Dürüm",
-		hero_title: "Saisonnier, au feu de bois, inoubliable.",
+		hero_title: "L'art de bien manger, le plaisir de recommencer.",
 		hero_sub: "",
 		cta_book: "Commander",
 		cta_menu: "Voir le menu",
@@ -44,7 +44,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 	},
 	en: {
 		brand: "Biyo Dürüm",
-		hero_title: "Seasonal, wood-fired, unforgettable.",
+		hero_title: "The art of eating well, the pleasure of doing it again.",
 		hero_sub: "",
 		cta_book: "Order",
 		cta_menu: "View Menu",
@@ -72,7 +72,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 	},
 	de: {
 		brand: "Biyo Dürüm",
-		hero_title: "Saisonal, holzbefeuert, unvergesslich.",
+		hero_title: "Die Kunst, gut zu essen, die Freude, es wieder zu tun.",
 		hero_sub: "",
 		cta_book: "Bestellen",
 		cta_menu: "Speisekarte",
@@ -100,7 +100,7 @@ const i18n: Record<Lang, Record<string, string | string[]>> = {
 	},
 	es: {
 		brand: "Biyo Dürüm",
-		hero_title: "De temporada, a la leña, inolvidable.",
+		hero_title: "El arte de comer bien, el placer de repetirlo.",
 		hero_sub: "",
 		cta_book: "Pedir",
 		cta_menu: "Ver carta",
@@ -144,10 +144,10 @@ const menu = [
 			es: "Dürüm de carne",
 		},
 		desc: {
-			en: "salad, tomato, onion, parsley, rocket, beef",
-			fr: "salade, tomate, oignon, persil, roquette, viande hâchée",
-			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Hackfleisch",
-			es: "Ensalada, tomate, cebolla, perejil, rucula, carne",
+			en: "salad, tomato, onion, parsley, rocket, minced meat (lamb, beef)",
+			fr: "salade, tomate, oignon, persil, roquette, viande hâchée (agneau, bœuf)",
+			de: "Salat, Tomate, Zwiebel, Petersilie, Rucola, Hackfleisch (Lamm, Rind)",
+			es: "Ensalada, tomate, cebolla, perejil, rucula, carne (cordero, ternera)",
 		},
 		price: "€10.00"
 	},
@@ -256,6 +256,21 @@ const menu = [
 		},
 		price: "€4.00"
 	},
+  {
+    name: {
+      en: "Poğaça",
+      fr: "Poğaça",
+      de: "Poğaça",
+      es: "Poğaça",
+    },
+    desc: {
+      en: "cheese bread",
+      fr: "pain au fromage",
+      de: "Käsebrot",
+      es: "pan de queso",
+    },
+		price: "€3.00"
+  }
 ];
 
 const classNames = (...xs: Array<string | false | undefined>) => xs.filter(Boolean).join(" ");
