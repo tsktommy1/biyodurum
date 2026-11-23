@@ -269,8 +269,54 @@ const menu = [
       de: "Käsebrot",
       es: "pan de queso",
     },
-		price: "€3.00"
-  }
+    price: "€3.00"
+  },
+  {
+    name: {
+      en: "Soup",
+      fr: "Soupe",
+      de: "Suppe",
+      es: "Sopa",
+    },
+    desc: {
+      en: "red lentil, onion, pepper",
+      fr: "lentilles corail, oignon, poivron",
+      de: "rote Linsen, Zwiebel, Paprika",
+      es: "lenteja roja, cebolla, Pimiento",
+    },
+    price: "€6.00"
+  },
+  {
+    name: {
+      en: "Ayran",
+      fr: "Ayran",
+      de: "Ayran",
+      es: "Ayran",
+    },
+    desc: { en: "", fr: "", de: "", es: "" },
+    price: "€2.00"
+  },
+  {
+    name: {
+      en: "Lemonade",
+      fr: "Citronnade",
+      de: "Limonade",
+      es: "Limonada",
+    },
+    desc: { en: "", fr: "", de: "", es: "" },
+    price: "€3.00"
+  },
+  {
+    name: {
+      en: "Rice pudding",
+      fr: "Riz au lait",
+      de: "Milchreis",
+      es: "Arroz con leche",
+    },
+    desc: { en: "", fr: "", de: "", es: "" },
+    price: "€5.00"
+  },
+
 ];
 
 const classNames = (...xs: Array<string | false | undefined>) => xs.filter(Boolean).join(" ");
